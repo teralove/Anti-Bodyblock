@@ -16,7 +16,7 @@ module.exports = function antiBodyBlock(mod) {
       partyObj.unk1   = cache.unk1;
       partyObj.unk2   = cache.unk2;
       partyObj.unk3   = cache.unk3;
-      mod.dispatch.send("S_PARTY_INFO", 1, partyObj);
+      mod.send("S_PARTY_INFO", 1, partyObj);
     }
   };
   
