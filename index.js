@@ -43,7 +43,7 @@ module.exports = function antiBodyBlock(mod) {
     for (let i = 0, arr = evt.members, len = arr.length; i < len; ++i) {
       const member = arr[i];
       if (!member.online) continue;
-      partyMembers.add(member.mod.gameId);
+      partyMembers.add(member.mod.game.gameId);
     }
   });
 };
