@@ -20,7 +20,7 @@ module.exports = function antiBodyBlock(mod) {
     }
   };
   
-  mod.game.on('enter_mod.game', () => {
+  mod.game.on('enter_game', () => {
     if (enabled) {
       interval = setInterval(removeBodyBlock, 5000);
     }
