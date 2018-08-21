@@ -1,6 +1,6 @@
 'use strict'
 
-module.exports = function antiBodyBlock(mod.dispatch) {
+module.exports = function antiBodyBlock(mod) {
   const partyMembers = new Set();
   const cache = Object.create(null);
   const partyObj = Object.create(null);
