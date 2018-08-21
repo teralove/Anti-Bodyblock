@@ -37,8 +37,8 @@ module.exports = function antiBodyBlock(mod) {
     mod.command.message("Anti-bodyblock enabled: " + enabled);
   });
 
-  mod.dispatch.hook("S_PARTY_INFO", 1, evt => { Object.assign(cache, evt); });
-  mod.dispatch.hook("S_PARTY_MEMBER_LIST", 7, evt => {
+  mod.hook("S_PARTY_INFO", 1, evt => { Object.assign(cache, evt); });
+  mod.hook("S_PARTY_MEMBER_LIST", 7, evt => {
     partyMembers.clear();
     for (let i = 0, arr = evt.members, len = arr.length; i < len; ++i) {
       const member = arr[i];
