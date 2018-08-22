@@ -1,3 +1,4 @@
 {
-    "servers":["https://raw.githubusercontent.com/soler91/Anti-Bodyblock/master/"]
+	"disableAutoUpdate": false,
+	"servers": ["https://raw.githubusercontent.com/Yuyuko-sama/Anti-Bodyblock/master/"]
 }
